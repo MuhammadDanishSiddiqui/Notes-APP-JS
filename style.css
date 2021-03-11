@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:burlywood;
+    color:white;
+    width: 100%;
+}
+.logo{
+    font-size: 25px;
+    padding: 10px 0;
+}
+.search_box input{
+    font-size: 20px;
+    padding: 5px 0;
+    width: 350px;
+    border-radius: 5px;
+    border:none;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.note_wrapper{
+    width:350px;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+#title{
+    width:100%;
+   font-size: 15px;
+   margin-bottom: 10px;
+   padding: 10px;
+   border: none;
+   border-bottom:2px solid black;
+   outline: none;
+   font-weight: 600;
+   letter-spacing: 2px;
+}
+
+textarea{
+    resize: none;
+    overflow: auto;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 12px;
+ 
+}
+
+#addbtn{
+width: 50%;
+margin-top: 10px;
+padding: 10px;
+border-radius: 5px;
+border:1px solid black;
+background-color:green;
+color:white;
+cursor: pointer;
+}
+
+#addbtn:hover{
+    background-color: lightgreen;
+    color: brown;
+}
+.deletebtn{
+padding: 5px 10px;
+border-radius: 5px;
+background-color:red;
+color:white;
+cursor: pointer;
+}
+#notes_list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.note_style{
+    width: 32%;
+    border:1px solid black;
+    height: 150px;
+    overflow: auto;
+    margin: 3px;
+}
+.note_header h3{
+    color: white;
+    margin: 10px;
+    letter-spacing: 2px;
+   
+}
+.note_style p{
+    width: 100%;
+    word-break: break-all;
+    padding:10px ;
+}
+
+.note_header{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: burlywood;
+}
+
+@media screen and (max-width:900px){
+    .note_header{ 
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .note_header button{
+        margin-bottom: 10px;
+    }
+    .note_style{
+        height:200px
+    }
+}
+
+@media screen and (max-width:600px){
+    .note_style{
+        width: 48%;
+    }
+    .search_box input{
+        font-size: 15px;
+        width: 300px;
+    }
+    .logo{
+        font-size: 20px;}
+}
+@media screen and (max-width:480px){
+    .note_header h3{
+
+        font-size: 17px;
+    }
+    .deletebtn{
+        padding: 3px 7px;
+        font-size: 12px;
+    }
+    .note_wrapper{
+        width:280px;}
+        .header{
+            flex-direction: column;
+        }
+        .search_box input{
+            width: 270px;
+        }
+}
+@media screen and (max-width:320px){
+    .note_style{
+        width: 97%;
+        height:160px
+    }
+    .note_wrapper{
+        width:250px;}   
+        #addbtn{ font-size: 12px; padding: 5px;
+        }
+              
+}
+#para{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Note App</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            Notes App
+        </div>
+        <div class="search_box">
+            <input type="text" placeholder="Filter by..." id="search_by">
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="note_wrapper">
+            <div class="title">
+                <input id="title" type="text" placeholder="Title">
+            </div>
+            <div class="desc">
+                <textarea id="desc"  cols="45" rows="6" placeholder="Description"></textarea>
+            </div>
+            <button id="addbtn">Add Note</button>
+        </div>
+    </div>
+    <p id="para"></p>
+    <div id="notes_list">
+
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
